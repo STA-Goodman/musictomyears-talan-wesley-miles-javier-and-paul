@@ -5,7 +5,7 @@ import winsound
 #2000 milliseconds is a half note
 #1500 milliseconds is a dotted quarter note
 
-count = 0
+monkeys = 5
 
 def c(duration=1000):
     winsound.Beep(261, duration)
@@ -27,8 +27,8 @@ song = [[c], [a,500], [a,500], [g], [a], [c,500], [c,500], [a,500], [a,500], [g,
 
 monkeys = 5
 
-while count < 5:
-    print(str(monkeys) + "Little monkeys jumping on the bed \n One fell off and bumped his head \n mama called the doctor and the doctor said")
+while monkeys > 0:
+    print(str(monkeys) + " Little monkeys jumping on the bed \n One fell off and bumped his head \n mama called the doctor and the doctor said")
     if monkeys == 1:
 	    print("No more monkeys right to bed!")
     else:
@@ -38,5 +38,4 @@ while count < 5:
             note[0](note[1])
         else:
             note[0]()
-    count+=1
     monkeys -= 1
