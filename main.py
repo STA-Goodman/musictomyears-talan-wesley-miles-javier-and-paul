@@ -30,7 +30,7 @@ monkeys = 5
 while monkeys > 0:
     print(str(monkeys) + " Little monkeys jumping on the bed \n One fell off and bumped his head \n mama called the doctor and the doctor said")
     if monkeys == 1:
-	    print("No more monkeys right to bed!")
+	    print("Put those monkeys right to bed!")
     else:
 	    print('"No more monkeys jumping on the bed!"\n')
     for note in song:
